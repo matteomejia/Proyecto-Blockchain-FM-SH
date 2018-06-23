@@ -1,0 +1,200 @@
+{
+	"id": "90232df3-2825-4721-804e-df4182cd0732",
+	"name": "test_blockchain",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"acf9ecb4-cdb3-4a3c-a4ab-0876eabfd06f",
+		"0097bc1a-5ae9-4219-b21f-32dc92110bdb",
+		"d2c0631d-b10d-4f5e-aec3-86ccc0d8001c",
+		"3539a34d-6484-43ae-8160-ad0b7ec37e27",
+		"7c90b2bc-d99c-4b16-9ef0-7f83922ac9ac",
+		"ec32efce-e12c-44ab-853e-1efe404e9230",
+		"b5f9c481-8702-4289-bedb-4b2b12eb9543",
+		"638bea59-795e-4200-87e7-89d97bfa90de",
+		"8aaf7545-0d95-4102-a3e6-57acc5ba40a9"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "0097bc1a-5ae9-4219-b21f-32dc92110bdb",
+			"name": "http://127.0.0.1:5001/add_transaction",
+			"url": "http://127.0.0.1:5001/add_transaction",
+			"description": "bet on the winner: peru",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n    \"country\": \"PERU\",\r\n    \"amount\":10\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3539a34d-6484-43ae-8160-ad0b7ec37e27",
+			"name": "http://127.0.0.1:5002/add_transaction",
+			"url": "http://127.0.0.1:5002/add_transaction",
+			"description": "apuesta por francia",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n    \"country\": \"FRANCIA\",\r\n    \"amount\":10\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "638bea59-795e-4200-87e7-89d97bfa90de",
+			"name": "http://127.0.0.1:5001/replace_chain",
+			"url": "http://127.0.0.1:5001/replace_chain",
+			"description": "Actualiza la cadena",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "7c90b2bc-d99c-4b16-9ef0-7f83922ac9ac",
+			"name": "http://127.0.0.1:5001/replace_chain",
+			"url": "http://127.0.0.1:5001/get_chain",
+			"description": "check results",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "8aaf7545-0d95-4102-a3e6-57acc5ba40a9",
+			"name": "http://127.0.0.1:5002/replace_chain",
+			"url": "http://127.0.0.1:5002/replace_chain",
+			"description": "Actualiza la cadena",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "acf9ecb4-cdb3-4a3c-a4ab-0876eabfd06f",
+			"name": "http://127.0.0.1:5001/connect_node",
+			"url": "http://127.0.0.1:5001/connect_node",
+			"description": "connect to node 5002",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n    \"nodes\": [\"http://127.0.0.1:5002\"]\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b5f9c481-8702-4289-bedb-4b2b12eb9543",
+			"name": "http://127.0.0.1:5000/add_transaction",
+			"url": "http://127.0.0.1:5000/add_transaction",
+			"description": "Devolver el dinero!!!\n",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "d2c0631d-b10d-4f5e-aec3-86ccc0d8001c",
+			"name": "http://127.0.0.1:5002/connect_node",
+			"url": "http://127.0.0.1:5002/connect_node",
+			"description": "connect to node 5002",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n    \"nodes\": [\"http://127.0.0.1:5001\"]\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ec32efce-e12c-44ab-853e-1efe404e9230",
+			"name": "http://127.0.0.1:5002/replace_chain",
+			"url": "http://127.0.0.1:5002/get_chain",
+			"description": "check results",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
