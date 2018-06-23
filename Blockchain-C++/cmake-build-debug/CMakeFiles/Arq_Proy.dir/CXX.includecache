@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/matte/CLionProjects/Arq_Proy/Block.h
+cstdint
+-
+iostream
+-
+string
+-
+
+C:/Users/matte/CLionProjects/Arq_Proy/Blockchain.h
+cstdint
+-
+vector
+-
+Block.h
+C:/Users/matte/CLionProjects/Arq_Proy/Block.h
+
+C:/Users/matte/CLionProjects/Arq_Proy/main.cpp
+iostream
+-
+Block.h
+C:/Users/matte/CLionProjects/Arq_Proy/Block.h
+Blockchain.h
+C:/Users/matte/CLionProjects/Arq_Proy/Blockchain.h
+sha256.h
+C:/Users/matte/CLionProjects/Arq_Proy/sha256.h
+
+C:/Users/matte/CLionProjects/Arq_Proy/sha256.h
+string
+-
+
